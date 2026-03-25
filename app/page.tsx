@@ -1,5 +1,4 @@
 import { UrgencyBanner } from "@/components/landing/urgency-banner";
-import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { LookInside } from "@/components/landing/look-inside";
 import { CourseContent } from "@/components/landing/course-content";

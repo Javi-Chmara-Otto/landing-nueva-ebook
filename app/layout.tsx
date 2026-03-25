@@ -69,8 +69,7 @@ export default function RootLayout({
         {/* --- FIN META PIXEL --- */}
 
 
-        {/* --- INICIO MICROSOFT CLARITY --- */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -79,7 +78,6 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "vv6sel02tw");
           `}
         </Script>
-        {/* --- FIN MICROSOFT CLARITY --- */}
 
       </body>
     </html>

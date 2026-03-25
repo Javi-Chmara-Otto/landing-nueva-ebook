@@ -7,7 +7,7 @@ const modules = [
   {
     number: "02",
     title: "Los 4 materiales que necesitas para hacer tu primera vela hoy",
-    description: "Sin desperdiciar plata en cosas innecesarias. Lista de proveedores incluida para que compres al mejor precio.",
+    description: "Sin desperdiciar dinero en cosas innecesarias. Lista de proveedores incluida para que compres al mejor precio.",
   },
   {
     number: "03",
@@ -59,8 +59,8 @@ export function CourseContent() {
               key={module.number}
               className={`
                 p-6 md:p-8 rounded-lg border transition-all duration-300
-                ${module.highlighted 
-                  ? "bg-accent/10 border-accent/30" 
+                ${module.highlighted
+                  ? "bg-accent/10 border-accent/30"
                   : "bg-card border-border hover:border-accent/30 hover:shadow-sm"
                 }
               `}

@@ -77,6 +77,10 @@ export function Offer() {
             DESCARGAR GUÍA POR $12,99 →
           </a>
 
+          <p className="text-[10px] sm:text-xs md:text-sm font-medium text-amber-900/70 uppercase tracking-wide">
+            Haz click para ver el precio en tu moneda local
+          </p>
+
           {/* Guarantee */}
           <div className="mt-6 border border-border rounded-xl p-4 flex items-center gap-3">
             <div className="flex-shrink-0 w-10 h-10 bg-amber-50 rounded-full flex items-center justify-center">

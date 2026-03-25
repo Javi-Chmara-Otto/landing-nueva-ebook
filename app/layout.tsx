@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Curso de Velas Artesanales de Lujo | Aprende a Crear Velas Premium',
+  title: 'Velas Luz del Alma',
   description: 'Domina el arte de crear velas artesanales de lujo desde cero. Curso completo con técnicas profesionales, fórmulas exclusivas y 3 bonos de regalo por solo $12.99 USD.',
   generator: 'v0.app',
   icons: {

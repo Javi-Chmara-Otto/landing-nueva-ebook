@@ -1,0 +1,74 @@
+import type { Metadata } from 'next'
+import { Playfair_Display, Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script' // <--- Agregamos esto
+import './globals.css'
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: '--font-serif',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: 'Curso de Velas Artesanales de Lujo | Aprende a Crear Velas Premium',
+  description: 'Domina el arte de crear velas artesanales de lujo desde cero. Curso completo con técnicas profesionales, fórmulas exclusivas y 3 bonos de regalo por solo $12.99 USD.',
+  generator: 'v0.app',
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="es">
+      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
+        suppressHydrationWarning={true}>
+        {children}
+        <Analytics />
+
+        {/* --- INICIO META PIXEL --- */}
+        <Script id="fb-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1316755053598827'); 
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        {/* --- FIN META PIXEL --- */}
+
+      </body>
+    </html>
+  )
+}

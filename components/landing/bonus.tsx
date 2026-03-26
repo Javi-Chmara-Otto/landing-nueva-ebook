@@ -4,24 +4,24 @@ export function Bonus() {
     const listaBonos = [
         {
             id: 1,
-            titulo: "Cómo encontrar proveedores al mejor precio",
-            descripcion: "Guía práctica para conseguir materiales de calidad sin perder tiempo ni dinero en el intento.",
+            titulo: "El Radar de Proveedores Inteligente",
+            descripcion: "No necesitas una lista mágica, necesitas saber dónde buscar. Te enseño mi sistema exacto para encontrar proveedores confiables en tu ciudad o país , filtrar a los mejores y conseguir precios de mayorista desde tu primera compra de prueba.",
             icono: <Gift className="w-8 h-8 text-amber-700" />,
-            valor: "$7.00"
+            valor: "$17.00"
         },
         {
             id: 2,
-            titulo: "Calculadora de Costos",
-            descripcion: "Planilla Excel que calcula automáticamente tu costo, precio de venta y ganancia por vela.",
+            titulo: "Sistema Automático de Rentabilidad",
+            descripcion: "Deja de adivinar y empieza a ganar dinero real. Con esta planilla automatizada, solo ingresas lo que pagaste por tus insumos y el sistema te dice exactamente cuánto cobrar por cada vela para asegurar tu ganancia neta. Sin errores, sin perder dinero.",
             icono: <Calculator className="w-8 h-8 text-amber-700" />,
-            valor: "$5.00"
+            valor: "$27.00"
         },
         {
             id: 3,
-            titulo: "10 textos listos para vender en redes",
-            descripcion: "Copia, pega, cambia el precio y publica. Sin tener que pensar qué escribir.",
+            titulo: "Pack 'Venta Explosiva' en Redes Sociales",
+            descripcion: "¿No sabes qué escribir en tus publicaciones? Te entrego 10 plantillas de texto de alta conversión diseñadas para Instagram y WhatsApp. Solo copia, pega y adapta a tu marca de lujo para empezar a recibir pedidos desde tu primera semana, tal como hizo María en su emprendimiento.",
             icono: <MessageCircle className="w-8 h-8 text-amber-700" />,
-            valor: "$5.00"
+            valor: "$15.00"
         }
     ]
 

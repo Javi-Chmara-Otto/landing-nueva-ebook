@@ -17,29 +17,29 @@ export function Hero() {
           {/* Columna de Texto - Sale PRIMERO en mobile (order-1) */}
           <div className="text-center lg:text-left order-1 lg:col-span-7">
             <span className="inline-block text-base md:text-lg uppercase tracking-[0.3em] text-amber-900/70 font-bold mb-6">
-              Ebook Digital
+              Únete a más de 500 emprendedoras que ya lanzaron su marca
             </span>
 
             <h1
               style={{ fontSize: 'clamp(40px, 8vw, 60px)', lineHeight: '1.2' }}
               className="font-serif font-medium tracking-tighter text-black mb-8"
             >
-              Aprende a crear y vender <br className="hidden lg:block" />
-              <span className="italic text-amber-950 text-[1.1em]">Velas Artesanales</span>
+              Crea tu propia marca de<br className="hidden lg:block" />
+              <span className="italic text-amber-950 text-[1.1em]">Velas de Lujo</span>
             </h1>
 
             <p className="text-lg sm:text-xl lg:text-2xl text-stone-600 leading-relaxed max-w-2xl mb-8 lg:mx-0">
-              Lanza tu emprendimiento hoy mismo — comienza con los materiales que tienes en casa
+              Comienza hoy mismo desde tu cocina, con menos de $30 USD de inversión y sin necesidad de experiencia previa.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mt-6 mb-4">
               <Button
                 asChild
                 size="lg"
-                className="h-14 lg:h-20 px-12 text-xl lg:text-2xl font-bold transition-all shadow-2xl !bg-[#2A1810] !text-white rounded-full hover:!bg-[#3d2419] border-none"
+                className="h-14 lg:h-20 px-12 text-xl lg:text-2xl font-bold transition-all shadow-2xl !bg-[#f59e0b] !text-white rounded-full hover:!bg-[#d97706] border-none"
               >
                 <a href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" target="_blank" className="uppercase">
-                  SÍ. Quiero Aprender →
+                  SÍ. Quiero Empezar →
                 </a>
               </Button>
             </div>
@@ -47,15 +47,15 @@ export function Hero() {
             {/* Trust badges - Stickers ocultos en mobile */}
             <div className="mt-2 flex items-center justify-center lg:justify-start gap-6 text-xs md:text-sm text-stone-500">
               <div className="flex items-center gap-2">
-                <div className="hidden lg:block w-2 h-2 bg-amber-600 rounded-full" />
+                <div className="hidden lg:block w-2 h-2 bg-amber-500 rounded-full" />
                 <span>Descarga inmediata</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="hidden lg:block w-2 h-2 bg-amber-600 rounded-full" />
+                <div className="hidden lg:block w-2 h-2 bg-amber-500 rounded-full" />
                 <span>Acceso de por vida</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="hidden lg:block w-2 h-2 bg-amber-600 rounded-full" />
+                <div className="hidden lg:block w-2 h-2 bg-amber-500 rounded-full" />
                 <span>Garantía 7 días</span>
               </div>
             </div>

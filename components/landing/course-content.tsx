@@ -1,33 +1,33 @@
 const modules = [
   {
     number: "01",
-    title: "Por qué las velas artesanales son el negocio más fácil de arrancar desde casa",
-    description: "El único negocio que puedes empezar este fin de semana con menos de $30 y sin experiencia previa.",
+    title: "El Atajo de la Emprendedora",
+    description: "Por qué las velas son el negocio más rentable para arrancar hoy mismo con solo $30 de inversión.",
   },
   {
     number: "02",
-    title: "Los 4 materiales que necesitas para hacer tu primera vela hoy",
-    description: "Sin desperdiciar dinero en cosas innecesarias. Aprende a encontrar proveedores al mejor precio.",
+    title: "Tu Kit Esencial de Inicio",
+    description: "Los únicos 4 materiales que realmente necesitas. Deja de tirar dinero en insumos innecesarios.",
   },
   {
     number: "03",
-    title: "La receta exacta para tu primera vela perfecta (sin errores costosos)",
-    description: "Paso a paso con los errores más comunes ya resueltos para que no desperdicies ni un gramo de cera.",
+    title: "Fórmula 'Cero Errores'",
+    description: "El paso a paso exacto para que tus velas huelan increíble y queden perfectas desde la primera prueba.",
   },
   {
     number: "04",
-    title: "Velas irresistibles que se venden solas",
-    description: "Combinaciones de aromas, colores y texturas que convierten una vela común en un producto imposible de ignorar.",
+    title: "Diseños de Alta Gama",
+    description: "Secretos de aromas y texturas para que tus clientes perciban tus velas como objetos de lujo (y paguen por ello).",
   },
   {
     number: "05",
-    title: "Cómo armar una línea de productos que se venda sola",
-    description: "Define tu nicho, ponle nombre a tus velas y crea un packaging que enamore a tus clientes desde el primer vistazo.",
+    title: "Tu Marca Irresistible",
+    description: "Crea un packaging que enamore a primera vista y una línea de productos que se venda sin 'perseguir' clientes.",
   },
   {
     number: "06",
-    title: "Cómo fijar tu precio para ganar dinero desde la primera venta",
-    description: "La fórmula exacta para calcular tus costos, cobrar lo que vale tu trabajo y conseguir tus primeras ventas sin gastar en publicidad.",
+    title: "Estrategia de Precios Pro",
+    description: "Cómo cobrar lo que realmente vales y conseguir tus primeras ventas sin gastar un centavo en publicidad.",
     highlighted: true,
   },
 ];

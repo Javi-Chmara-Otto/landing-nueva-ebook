@@ -6,7 +6,7 @@ const testimonials = [
     role: "Emprendedora",
     location: "Buenos Aires, Argentina",
     content:
-      "En una semana hice mis primeras velas y las vendí a mis compañeras del trabajo. No podía creer que fuera tan simple. El paso a paso es clarísimo.",
+      "Hice mi primeras ventas en solo una semana y no podía creer que fuera tan simple. El paso a paso es clarísimo. Antes de la guía no sabía ni por dónde empezar y hoy ya tengo mis primeras clientes felices con mis velas de lujo.",
     initials: "MG",
   },
   {
@@ -14,7 +14,7 @@ const testimonials = [
     role: "Diseñadora",
     location: "Medellín, Colombia",
     content:
-      "El capítulo de precios me abrió los ojos. Estaba regalando mi trabajo. Ahora cobro lo que vale y la gente igual compra. Ojalá lo hubiera leído antes.",
+      "El capítulo de precios me abrió los ojos porque literalmente estaba regalando mi trabajo. Ahora cobro lo que mis velas realmente valen y la gente me compra igual. Ojalá hubiera leído esto antes de empezar por mi cuenta.",
     initials: "VP",
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     role: "Artesana",
     location: "Ciudad de México, México",
     content:
-      "Clarísimo y muy completo. Fui directo al capítulo de marketing y en dos semanas ya tenía mi primer pedido por Instagram. Vale cada centavo.",
+      "Fui directo al capítulo de marketing y en dos semanas ya tenía mi primer pedido por Instagram. La guía es súper completa, me ayudó a crear mi marca desde cero sin gastar un centavo en publicidad. Vale cada centavo.",
     initials: "LC",
   },
 ];

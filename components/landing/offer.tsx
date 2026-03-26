@@ -3,11 +3,12 @@
 import { Shield, Lock, Sparkles } from "lucide-react";
 
 const benefits = [
-  "Guía completa paso a paso",
-  "Recetas y proporciones exactas",
-  "Checklist de materiales lista para usar",
-  "Fórmulas para calcular precios",
-  "Estrategias de venta sin publicidad paga",
+  "Guía 'El Arte de las Velas de Lujo': $29.99 USD",
+  "Bono 1: Radar de Proveedores Inteligente: $17.00 USD",
+  "Bono 2: Calculadora Pro de Rentabilidad: $27.00 USD",
+  "Bono 3: Pack 'Venta Explosiva' en Redes: $15.00 USD",
+  "VALOR TOTAL: $88.99 USD",
+  "Llévatelo todo hoy por solo: $12.99 USD",
 ];
 
 export function Offer() {
@@ -61,12 +62,28 @@ export function Offer() {
 
           {/* Benefits List */}
           <ul className="space-y-3 mb-8 max-w-md mx-auto">
-            {benefits.map((benefit, index) => (
-              <li key={index} className="flex items-start gap-3">
-                <span className="text-amber-500 font-medium text-lg leading-6">+</span>
-                <span className="text-foreground text-sm md:text-base">{benefit}</span>
-              </li>
-            ))}
+            {benefits.map((benefit, index) => {
+              // Detectamos si es "VALOR TOTAL" para ponerlo gris/tachado
+              const isTotal = benefit.includes("VALOR TOTAL");
+              // Detectamos si es la última frase para ponerla en negrita y color
+              const isFinalOffer = index === benefits.length - 1;
+
+              return (
+                <li key={index} className="flex items-start gap-3">
+                  <span className={`font-medium text-lg leading-6 ${isTotal ? 'text-gray-400' : 'text-amber-500'}`}>
+                    {isTotal ? '→' : '+'}
+                  </span>
+                  <span className={`text-sm md:text-base ${isTotal
+                    ? 'text-gray-400 line-through'
+                    : isFinalOffer
+                      ? 'text-amber-700 font-bold text-lg md:text-xl'
+                      : 'text-foreground'
+                    }`}>
+                    {benefit}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
 
           {/* CTA Button */}
@@ -88,7 +105,7 @@ export function Offer() {
             </div>
             <p className="text-sm text-foreground">
               <span className="font-semibold">Garantía 7 días:</span>{" "}
-              <span className="text-muted-foreground">si no te convence, te devolvemos el 100% sin preguntas.</span>
+              <span className="text-muted-foreground">Lee la guía, busca tus materiales por menos de $50 y si no sientes que puedes montar tu negocio, te devolvemos el 100%.</span>
             </p>
           </div>
 

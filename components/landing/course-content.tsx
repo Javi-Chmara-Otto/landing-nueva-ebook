@@ -7,7 +7,7 @@ const modules = [
   {
     number: "02",
     title: "Los 4 materiales que necesitas para hacer tu primera vela hoy",
-    description: "Sin desperdiciar dinero en cosas innecesarias. Lista de proveedores incluida para que compres al mejor precio.",
+    description: "Sin desperdiciar dinero en cosas innecesarias. Aprende a encontrar proveedores al mejor precio.",
   },
   {
     number: "03",

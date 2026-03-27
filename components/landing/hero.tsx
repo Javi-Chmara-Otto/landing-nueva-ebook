@@ -16,7 +16,7 @@ export function Hero() {
 
           {/* Columna de Texto - Sale PRIMERO en mobile (order-1) */}
           <div className="text-center lg:text-left order-1 lg:col-span-7">
-            <span className="inline-block text-xs md:text-sm uppercase tracking-[0.3em] text-amber-900/70 font-bold mb-6">
+            <span className="inline-block text-xs md:text-sm uppercase tracking-[0.3em] text-amber-900/70 font-bold mb-8">
               Únete a la comunidad que están transformando su pasión en un negocio de lujo.
             </span>
 
@@ -31,6 +31,21 @@ export function Hero() {
             <p className="text-lg sm:text-xl lg:text-2xl text-stone-600 leading-relaxed max-w-2xl mb-8 lg:mx-0">
               Comienza hoy mismo desde tu cocina, con menos de $15 USD de inversión y sin necesidad de experiencia previa.
             </p>
+
+            <div className="flex flex-col gap-3 mb-8 mt-4 text-left">
+              <div className="flex items-center gap-2 text-amber-900/80 text-sm md:text-base font-medium">
+                <span className="text-amber-600">✨</span>
+                <span>Incluye Calculadora de Costos y Precios Automática</span>
+              </div>
+              <div className="flex items-center gap-2 text-amber-900/80 text-sm md:text-base font-medium">
+                <span className="text-amber-600">🚀</span>
+                <span>Incluye Plan de Ventas Exclusivo para Instagram</span>
+              </div>
+              <div className="flex items-center gap-2 text-amber-900/80 text-sm md:text-base font-medium">
+                <span className="text-amber-600">💎</span>
+                <span>Incluye Radar de Proveedores VIP (Materia Prima)</span>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mt-6 mb-4">
               <Button

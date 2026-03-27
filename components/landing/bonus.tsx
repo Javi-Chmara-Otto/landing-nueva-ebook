@@ -30,7 +30,7 @@ export function Bonus() {
             <div className="max-w-6xl mx-auto px-4 text-center">
                 <h2 className="font-serif text-4xl md:text-5xl mb-4 text-amber-950">Regalos Exclusivos</h2>
                 <p className="text-muted-foreground mb-16 max-w-2xl mx-auto">
-                    Si te sumas hoy, te llevas estas 3 herramientas valuadas en más de $17 USD totalmente GRATIS.
+                    Si te sumas hoy, te llevas estas 3 herramientas valuadas en más de $50 USD totalmente GRATIS.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-8">

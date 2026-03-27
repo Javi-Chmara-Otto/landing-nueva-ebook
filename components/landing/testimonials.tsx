@@ -37,7 +37,7 @@ export function Testimonials() {
             Prueba Social
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground text-balance">
-            Lo que dicen nuestras alumnas
+            Emprendedoras que aplicaron la Guía
           </h2>
         </div>
 

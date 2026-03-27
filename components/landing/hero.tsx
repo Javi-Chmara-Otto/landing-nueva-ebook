@@ -17,7 +17,7 @@ export function Hero() {
           {/* Columna de Texto - Sale PRIMERO en mobile (order-1) */}
           <div className="text-center lg:text-left order-1 lg:col-span-7">
             <span className="inline-block text-base md:text-lg uppercase tracking-[0.3em] text-amber-900/70 font-bold mb-6">
-              Únete a más de 500 emprendedoras que ya lanzaron su marca
+              Únete a la comunidad que están transformando su pasión en un negocio de lujo.
             </span>
 
             <h1

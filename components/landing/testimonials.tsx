@@ -6,7 +6,7 @@ const testimonials = [
     role: "Emprendedora",
     location: "Buenos Aires, Argentina",
     content:
-      "Hice mi primeras ventas en solo una semana y no podía creer que fuera tan simple. El paso a paso es clarísimo. Antes de la guía no sabía ni por dónde empezar y hoy ya tengo mis primeras clientes felices con mis velas de lujo.",
+      "Hice mis primeras ventas en solo una semana y no podía creer que fuera tan simple. El paso a paso es clarísimo. Antes de la guía no sabía ni por dónde empezar y hoy ya tengo mis primeras clientes felices con mis velas de lujo.",
     initials: "MG",
   },
   {

@@ -16,7 +16,7 @@ export function Hero() {
 
           {/* Columna de Texto - Sale PRIMERO en mobile (order-1) */}
           <div className="text-center lg:text-left order-1 lg:col-span-7">
-            <span className="inline-block text-base md:text-lg uppercase tracking-[0.3em] text-amber-900/70 font-bold mb-6">
+            <span className="inline-block text-xs md:text-sm uppercase tracking-[0.3em] text-amber-900/70 font-bold mb-6">
               Únete a la comunidad que están transformando su pasión en un negocio de lujo.
             </span>
 
@@ -29,7 +29,7 @@ export function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl lg:text-2xl text-stone-600 leading-relaxed max-w-2xl mb-8 lg:mx-0">
-              Comienza hoy mismo desde tu cocina, con menos de $30 USD de inversión y sin necesidad de experiencia previa.
+              Comienza hoy mismo desde tu cocina, con menos de $15 USD de inversión y sin necesidad de experiencia previa.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mt-6 mb-4">

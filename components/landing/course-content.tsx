@@ -4,7 +4,7 @@ const modules = [
   {
     number: "01",
     title: "El Atajo de la Emprendedora",
-    description: "Por qué las velas son el negocio más rentable para arrancar hoy mismo con solo $15 de inversión inicial.",
+    description: "Por qué las velas son el negocio más rentable para arrancar hoy mismo con menos de $25 de inversión inicial.",
   },
   {
     number: "02",

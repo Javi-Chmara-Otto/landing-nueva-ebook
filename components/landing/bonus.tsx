@@ -48,14 +48,14 @@ export function Bonus() {
 
     return (
         <section className="py-24 bg-[#fcf9f5] border-y border-amber-100/50 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 text-center">
+            <div className="mb-6 md:mb-8 flex justify-center">
                 <span className="inline-flex items-center justify-center bg-amber-100 text-amber-900 
-                 text-[11px] md:text-sm font-black uppercase tracking-[0.2em] 
-                 px-6 py-2 rounded-full shadow-sm">
-                    Oferta Exclusiva de Hoy
+                   text-[11px] md:text-sm font-black uppercase tracking-[0.2em] 
+                   px-6 py-2 rounded-full shadow-sm">
+                    Oferta exclusiva de hoy
                 </span>
 
-                <h2 className="font-serif text-4xl md:text-6xl mb-6 text-amber-950 italic leading-tight">
+                <h2 className="font-serif text-3xl md:text-5xl text-stone-900 leading-tight italic">
                     ¡Llévate más de $120 USD en Bonos de Regalo!
                 </h2>
 

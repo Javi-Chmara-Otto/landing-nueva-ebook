@@ -1,53 +1,112 @@
-import { Gift, Calculator, MessageCircle } from "lucide-react"
+import { CheckCircle2 } from "lucide-react"
 
 export function Bonus() {
     const listaBonos = [
         {
             id: 1,
-            titulo: "El Radar de Proveedores Inteligente",
-            descripcion: "No necesitas una lista mágica, necesitas saber dónde buscar. Te enseño mi sistema exacto para encontrar proveedores confiables en tu ciudad o país , filtrar a los mejores y conseguir precios de mayorista desde tu primera compra de prueba.",
-            icono: <Gift className="w-8 h-8 text-amber-700" />,
+            titulo: "Tu Guía de Suministros VIP",
+            descripcion: "Aprende a identificar materiales premium y evita estafas sin depender de listas desactualizadas. Te enseño a filtrar proveedores confiables.",
+            imagen: "/Mockup Bonus 1.png",
             valor: "$17.00"
         },
         {
             id: 2,
-            titulo: "Sistema Automático de Rentabilidad",
-            descripcion: "Deja de adivinar y empieza a ganar dinero real. Con esta planilla automatizada, solo ingresas lo que pagaste por tus insumos y el sistema te dice exactamente cuánto cobrar por cada vela para asegurar tu ganancia neta. Sin errores, sin perder dinero.",
-            icono: <Calculator className="w-8 h-8 text-amber-700" />,
+            titulo: "Calculadora de costos",
+            descripcion: "Deja de adivinar y empieza a ganar dinero real. Con esta planilla automatizada, el sistema te dice exactamente cuánto cobrar para asegurar tu ganancia.",
+            imagen: "/Mockup Bonus 2.png",
             valor: "$27.00"
         },
         {
             id: 3,
-            titulo: "Pack 'Venta Explosiva' en Redes Sociales",
-            descripcion: "¿No sabes qué escribir en tus publicaciones? Te entrego 10 plantillas de texto de alta conversión diseñadas para Instagram y WhatsApp. Solo copia, pega y adapta a tu marca de lujo para empezar a recibir pedidos desde tu primera semana, tal como hizo María en su emprendimiento.",
-            icono: <MessageCircle className="w-8 h-8 text-amber-700" />,
+            titulo: "10 Plantillas para Redes",
+            descripcion: "10 plantillas de alta conversión para Instagram y WhatsApp. Solo copia, pega y adapta para empezar a recibir pedidos desde tu primera semana.",
+            imagen: "/Mockup Bonus 3.png",
+            valor: "$15.00"
+        },
+        {
+            id: 4,
+            titulo: "Velas Navideñas y de Temporada",
+            descripcion: "Domina los diseños más lucrativos del año. Crea velas temáticas que se venden solas en Navidad y fechas especiales para multiplicar tus ingresos.",
+            imagen: "/Mockup Bonus 4.png",
+            valor: "$19.00"
+        },
+        {
+            id: 5,
+            titulo: "Técnicas Avanzadas de Repostería",
+            descripcion: "Lleva tus velas al siguiente nivel con el efecto 'Chantilly'. Aprende a crear velas que parezcan postres reales y sorprendan a tus clientes.",
+            imagen: "/Mockup Bonus 5.png",
+            valor: "$27.00"
+        },
+        {
+            id: 6,
+            titulo: "Marketing para tu Marca de Velas",
+            descripcion: "Estrategias prácticas para atraer clientes sin invertir en publicidad. Construye una marca sólida que genere ventas constantes en redes sociales.",
+            imagen: "/Mockup Bonus 6.png",
             valor: "$15.00"
         }
-    ]
+    ];
 
     return (
-        <section className="py-24 bg-[#fcf9f5] border-y border-amber-100/50">
-            <div className="max-w-6xl mx-auto px-4 text-center">
-                <h2 className="font-serif text-4xl md:text-5xl mb-4 text-amber-950">Regalos Exclusivos</h2>
-                <p className="text-muted-foreground mb-16 max-w-2xl mx-auto">
-                    Si te sumas hoy, te llevas estas 3 herramientas valuadas en más de $50 USD totalmente GRATIS.
+        <section className="py-24 bg-[#fcf9f5] border-y border-amber-100/50 overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 text-center">
+                <span className="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-[10px] font-black mb-4 uppercase tracking-[0.3em]">
+                    Oferta Exclusiva de Hoy
+                </span>
+
+                <h2 className="font-serif text-4xl md:text-6xl mb-6 text-amber-950 italic leading-tight">
+                    ¡Llévate más de $120 USD en Bonos de Regalo!
+                </h2>
+
+                <p className="text-muted-foreground mb-20 max-w-2xl mx-auto text-lg italic">
+                    Si te inscribes hoy, desbloqueas estas herramientas para lanzar tu negocio con <strong>menos de $25 USD</strong>.
                 </p>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                     {listaBonos.map((bono) => (
-                        <div key={bono.id} className="bg-white p-10 rounded-3xl shadow-sm border border-amber-100 hover:shadow-md transition-shadow">
-                            <div className="bg-amber-50 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                {bono.icono}
+                        <div key={bono.id} className="group bg-white rounded-[3rem] shadow-sm border border-amber-100 flex flex-col transition-all duration-500 hover:shadow-2xl">
+
+                            {/* CONTENEDOR DE IMAGEN GIGANTE: Maximizamos el espacio visual */}
+                            <div className="relative h-[380px] md:h-[480px] flex items-center justify-center p-2 bg-gradient-to-b from-amber-50/40 to-transparent rounded-t-[3rem] overflow-visible">
+                                <img
+                                    src={bono.imagen}
+                                    alt={bono.titulo}
+                                    className="w-full max-w-[320px] md:max-w-[420px] h-auto drop-shadow-[0_35px_55px_rgba(0,0,0,0.3)] 
+                                               transform scale-110 md:scale-125
+                                               group-hover:scale-120 md:group-hover:scale-135 
+                                               transition-transform duration-700 ease-out z-10"
+                                    loading="lazy"
+                                />
                             </div>
-                            <h3 className="font-serif text-2xl mb-4">{bono.titulo}</h3>
-                            <p className="text-muted-foreground text-sm leading-relaxed mb-6">{bono.descripcion}</p>
-                            <span className="text-xs font-bold uppercase tracking-widest text-amber-800 line-through opacity-50">
-                                Valor: {bono.valor}
-                            </span>
+
+                            <div className="p-10 pt-12 text-left flex flex-col flex-grow">
+                                <div className="flex items-center gap-2 mb-6">
+                                    <div className="p-1.5 bg-amber-600 rounded">
+                                        <CheckCircle2 className="w-4 h-4 text-white" />
+                                    </div>
+                                    <span className="text-[11px] font-black text-amber-900 uppercase tracking-widest italic">Bono #0{bono.id}</span>
+                                </div>
+
+                                <h3 className="font-serif text-3xl mb-4 text-amber-950 leading-tight">
+                                    {bono.titulo}
+                                </h3>
+
+                                <p className="text-muted-foreground text-base leading-relaxed mb-10 flex-grow">
+                                    {bono.descripcion}
+                                </p>
+
+                                <div className="pt-8 border-t border-amber-50 flex justify-between items-center">
+                                    <span className="text-sm md:text-base text-slate-400 line-through decoration-slate-400/60 font-bold italic tracking-wider">
+                                        Valor: <span className="line-through">{bono.valor}</span>
+                                    </span>
+                                    <span className="text-2xl font-black text-amber-700 italic bg-amber-50 px-4 py-1 rounded-xl">
+                                        ¡GRATIS!
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
         </section>
-    )
+    );
 }

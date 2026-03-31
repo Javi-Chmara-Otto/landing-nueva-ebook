@@ -4,11 +4,14 @@ import { Shield, Lock, Sparkles } from "lucide-react";
 
 const benefits = [
   "Guía 'El Arte de las Velas de Lujo': $29.99 USD",
-  "Bono 1: Radar de Proveedores Inteligente: $17.00 USD",
-  "Bono 2: Calculadora Pro de Rentabilidad: $27.00 USD",
-  "Bono 3: Pack 'Venta Explosiva' en Redes: $15.00 USD",
-  "VALOR TOTAL: $88.99 USD",
-  "Llévatelo todo hoy por solo: $12.99 USD",
+  "Bono 1: Guía de Suministros VIP: $17.00 USD",
+  "Bono 2: Calculadora de costos: $27.00 USD",
+  "Bono 3: 10 Plantillas para Redes: $15.00 USD",
+  "Bono 4: Velas Navideñas y Temporada: $19.00 USD",
+  "Bono 5: Repostería Avanzada en Velas: $27.00 USD",
+  "Bono 6: Marketing para tus Redes: $15.00 USD",
+  "VALOR TOTAL: $149.99 USD",
+  "Llévatelo todo hoy por solo: $11.99 USD",
 ];
 
 export function Offer() {
@@ -52,7 +55,7 @@ export function Offer() {
               $29,99
             </span>
             <span className="text-amber-600 text-lg align-top relative top-1">$</span>
-            <span className="text-5xl md:text-6xl font-serif text-foreground">12,99</span>
+            <span className="text-5xl md:text-6xl font-serif text-foreground">11,99</span>
             <span className="text-xl md:text-2xl text-muted-foreground ml-2">USD</span>
           </div>
 
@@ -60,25 +63,29 @@ export function Offer() {
             Descarga inmediata en PDF · +50 páginas
           </p>
 
-          {/* Benefits List */}
-          <ul className="space-y-3 mb-8 max-w-md mx-auto">
+          {/* Benefits List - Optimizado para Mobile */}
+          <ul className="space-y-3 mb-8 max-w-lg mx-auto px-1">
             {benefits.map((benefit, index) => {
-              // Detectamos si es "VALOR TOTAL" para ponerlo gris/tachado
               const isTotal = benefit.includes("VALOR TOTAL");
-              // Detectamos si es la última frase para ponerla en negrita y color
               const isFinalOffer = index === benefits.length - 1;
 
               return (
-                <li key={index} className="flex items-start gap-3">
-                  <span className={`font-medium text-lg leading-6 ${isTotal ? 'text-gray-400' : 'text-amber-500'}`}>
+                <li key={index} className="flex items-start gap-2">
+                  {/* Signo + o Flecha */}
+                  <span className={`flex-shrink-0 font-bold text-base leading-5 ${isTotal ? 'text-gray-400' : 'text-amber-500'}`}>
                     {isTotal ? '→' : '+'}
                   </span>
-                  <span className={`text-sm md:text-base ${isTotal
-                    ? 'text-gray-400 line-through'
-                    : isFinalOffer
-                      ? 'text-amber-700 font-bold text-lg md:text-xl'
-                      : 'text-foreground'
-                    }`}>
+
+                  {/* Texto del Beneficio con ajuste de tamaño en mobile */}
+                  <span className={`
+          text-[13px] sm:text-sm md:text-base leading-tight
+          ${isTotal
+                      ? 'text-gray-400 line-through'
+                      : isFinalOffer
+                        ? 'text-amber-700 font-bold text-[15px] md:text-xl'
+                        : 'text-stone-800 font-medium'
+                    }
+        `}>
                     {benefit}
                   </span>
                 </li>
@@ -91,7 +98,7 @@ export function Offer() {
             href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" target="_blank"
             className="block w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-center font-semibold py-4 px-6 rounded-xl transition-all duration-300 text-base md:text-lg tracking-wide shadow-md hover:shadow-lg"
           >
-            DESCARGAR GUÍA POR $12,99 →
+            DESCARGAR GUÍA POR $11,99 →
           </a>
 
           <p className="w-full text-center text-[10px] sm:text-xs md:text-sm font-medium text-amber-900/70 uppercase tracking-widest mt-4 mb-3">
@@ -105,7 +112,7 @@ export function Offer() {
             </div>
             <p className="text-sm text-foreground">
               <span className="font-semibold">Garantía 7 días:</span>{" "}
-              <span className="text-muted-foreground">Lee la guía, busca tus materiales por menos de $50 y si no sientes que puedes montar tu negocio, te devolvemos el 100%.</span>
+              <span className="text-muted-foreground">Lee la guía, busca tus materiales por menos de $25 y si no sientes que puedes montar tu negocio, te devolvemos el 100%.</span>
             </p>
           </div>
 

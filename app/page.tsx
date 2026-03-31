@@ -2,7 +2,7 @@ import { UrgencyBanner } from "@/components/landing/urgency-banner";
 import { Hero } from "@/components/landing/hero";
 import { LookInside } from "@/components/landing/look-inside";
 import { CourseContent } from "@/components/landing/course-content";
-import { Testimonials } from "@/components/landing/testimonials";
+import { Testimonios } from "@/components/landing/testimonios";
 import { Bonus } from "@/components/landing/bonus";
 import { Offer } from "@/components/landing/offer";
 import { Faq } from "@/components/landing/faq";
@@ -16,8 +16,8 @@ export default function LandingPage() {
       <Hero />
       <CourseContent />
       <LookInside />
-      <Testimonials />
       <Bonus />
+      <Testimonios />
       <Offer />
       <Faq />
       <Footer />

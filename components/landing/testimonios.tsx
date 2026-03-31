@@ -37,7 +37,9 @@ export function Testimonios() {
 
         {/* Cabecera con Autoridad y Deseo */}
         <div className="text-center mb-20 max-w-3xl mx-auto">
-          <span className="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-[11px] font-black mb-4 uppercase tracking-[0.3em]">
+          <span className="inline-flex items-center justify-center bg-amber-100 text-amber-900 
+                 text-[11px] md:text-sm font-black uppercase tracking-[0.2em] 
+                 px-6 py-2 rounded-full shadow-sm">
             Historias de Éxito Real
           </span>
           <h2 className="font-serif text-4xl md:text-6xl mb-6 text-amber-950 italic leading-tight">

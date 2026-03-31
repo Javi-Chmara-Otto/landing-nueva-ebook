@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] lg:h-screen flex items-center justify-center px-4 pt-28 lg:pt-16 pb-10 overflow-hidden bg-[#FBF8F3]">
+    <section className="relative min-h-[90vh] lg:h-screen flex items-center justify-center px-4 pt-32 md:pt-40 lg:pt-16 overflow-hidden bg-[#FBF8F3]">
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-10 left-10 w-72 h-72 bg-amber-200/20 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-100/20 rounded-full blur-3xl" />

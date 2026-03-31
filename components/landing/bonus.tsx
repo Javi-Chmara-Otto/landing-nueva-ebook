@@ -48,20 +48,19 @@ export function Bonus() {
 
     return (
         <section className="py-24 bg-[#fcf9f5] border-y border-amber-100/50 overflow-hidden">
-            <div className="w-full mb-12 md:mb-16 text-center">
-                <span className="inline-block mb-6 md:mb-8 bg-amber-100 text-amber-900 
-                   text-[11px] md:text-sm font-black uppercase tracking-[0.2em] 
-                   px-6 py-2 rounded-full shadow-sm">
-                    Oferta exclusiva de hoy
+            <div className="max-w-7xl mx-auto px-4 text-center">
+                <span className="inline-flex items-center justify-center bg-amber-100 text-amber-900 
+                 text-[11px] md:text-sm font-black uppercase tracking-[0.2em] 
+                 px-6 py-2 rounded-full shadow-sm">
+                    Oferta Exclusiva de Hoy
                 </span>
 
-                <h2 className="font-serif text-4xl md:text-6xl text-stone-900 leading-tight mb-6">
-                    ¡Llévate más de <span className="italic text-amber-800">$120 USD</span> en Bonos de Regalo!
+                <h2 className="font-serif text-4xl md:text-6xl mb-6 text-amber-950 italic leading-tight">
+                    ¡Llévate más de $120 USD en Bonos de Regalo!
                 </h2>
 
-                <p className="text-stone-600 italic text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                    Si te inscribes hoy, desbloqueas estas herramientas para lanzar tu negocio
-                    con <strong className="text-stone-900 font-bold">menos de $25 USD</strong>.
+                <p className="text-muted-foreground mb-20 max-w-2xl mx-auto text-lg italic">
+                    Si te inscribes hoy, desbloqueas estas herramientas para lanzar tu negocio con <strong>menos de $25 USD</strong>.
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">

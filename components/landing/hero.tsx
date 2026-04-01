@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] lg:h-screen flex items-center justify-center px-4 pt-32 md:pt-40 lg:pt-16 overflow-hidden bg-[#FBF8F3]">
-      <div className="absolute inset-0 opacity-30">
+    /* FIX: Cambiamos overflow-hidden por overflow-visible para que el badge no se corte */
+    <section className="relative min-h-[90vh] lg:h-screen flex items-center justify-center px-4 pt-32 md:pt-40 lg:pt-16 overflow-visible bg-[#FBF8F3]">
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute top-10 left-10 w-72 h-72 bg-amber-200/20 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-100/20 rounded-full blur-3xl" />
       </div>
@@ -16,7 +17,6 @@ export function Hero() {
 
           {/* Columna de Texto */}
           <div className="text-center lg:text-left order-1 lg:col-span-7">
-            {/* FIX: pt-6 extra en mobile para despegar del contador */}
             <span className="inline-block pt-6 lg:pt-0 text-[9px] md:text-xs uppercase tracking-[0.3em] text-amber-900/70 font-black mb-6 lg:mb-4">
               Velas Luz del Alma • Emprender con Lujo
             </span>
@@ -47,7 +47,7 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* FIX: BULLETS EN 2 COLUMNAS PARA MOBILE (grid-cols-2) */}
+            {/* BULLETS */}
             <div className="grid grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-3 text-left max-w-md mx-auto lg:mx-0 mb-8 px-2">
               <div className="flex items-center gap-1.5 text-stone-800 text-[10px] md:text-sm font-bold bg-white/50 p-2 rounded-xl border border-amber-100/50 shadow-sm">
                 <span>✨</span> <span className="leading-tight">Ganancia en 30s</span>
@@ -84,8 +84,9 @@ export function Hero() {
                   className="w-full h-auto drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]"
                 />
               </div>
-              {/* Badge de Oferta: Mas pequeño en mobile */}
-              <div className="absolute -bottom-4 -right-2 bg-white p-2 lg:p-3 rounded-xl shadow-xl border border-amber-100 flex flex-col items-center rotate-12">
+
+              {/* FIX: z-30 para asegurar que esté sobre la imagen y la siguiente sección */}
+              <div className="absolute -bottom-4 -right-2 bg-white p-2 lg:p-3 rounded-xl shadow-xl border border-amber-100 flex flex-col items-center rotate-12 z-30 translate-y-2">
                 <span className="text-xl">🔥</span>
                 <span className="text-[8px] font-black uppercase text-stone-800 leading-tight">Oferta<br />Limitada</span>
               </div>

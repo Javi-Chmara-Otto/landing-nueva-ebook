@@ -32,7 +32,7 @@ export function Bonus() {
         },
         {
             id: 5,
-            titulo: "Técnicas Avanzadas de Repostería",
+            titulo: "Técnica Chantilly Avanzada",
             descripcion: "Lleva tus velas al siguiente nivel con el efecto 'Chantilly'. Aprende a crear velas que parezcan postres reales y sorprendan a tus clientes.",
             imagen: "/Mockup Bonus 5.png",
             valor: "$27.00"

@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: "¿Qué pasa si tengo dudas después de leerla?",
-    answer: "Tienes acceso a soporte por email durante 1 año. Respondo personalmente todas las consultas para asegurarme de que logres tus objetivos."
+    answer: "Tienes acceso a soporte por email durante 6 meses. Respondo personalmente todas las consultas para asegurarme de que logres tus objetivos."
   }
 ];
 
@@ -67,16 +67,14 @@ export function Faq() {
                 <span className="text-foreground font-medium pr-4">
                   {faq.question}
                 </span>
-                <ChevronDown 
-                  className={`w-5 h-5 text-amber-600 shrink-0 transition-transform duration-200 ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
+                <ChevronDown
+                  className={`w-5 h-5 text-amber-600 shrink-0 transition-transform duration-200 ${openIndex === index ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               <div
-                className={`overflow-hidden transition-all duration-200 ${
-                  openIndex === index ? "max-h-48" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-200 ${openIndex === index ? "max-h-48" : "max-h-0"
+                  }`}
               >
                 <p className="px-6 pb-5 text-muted-foreground leading-relaxed">
                   {faq.answer}

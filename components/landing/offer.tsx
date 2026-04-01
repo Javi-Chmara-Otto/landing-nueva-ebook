@@ -3,14 +3,14 @@
 import { Shield, Lock, Sparkles } from "lucide-react";
 
 const benefits = [
-  "Guía 'El Arte de las Velas de Lujo': $29.99 USD",
+  "Guía 'El Arte de las Velas de Lujo': $29 USD",
   "Bono 1: Guía de Suministros VIP: $17.00 USD",
   "Bono 2: Calculadora de costos: $27.00 USD",
   "Bono 3: 10 Plantillas para Redes: $15.00 USD",
   "Bono 4: Velas Navideñas y Temporada: $19.00 USD",
   "Bono 5: Repostería Avanzada en Velas: $27.00 USD",
   "Bono 6: Marketing para tus Redes: $15.00 USD",
-  "VALOR TOTAL: $149.99 USD",
+  "VALOR TOTAL: $149 USD",
   "Llévatelo todo hoy por solo: $11.99 USD",
 ];
 
@@ -52,7 +52,7 @@ export function Offer() {
           {/* Price Display */}
           <div className="text-center mb-2">
             <span className="text-xl md:text-2xl text-muted-foreground line-through mr-3">
-              $29,99
+              $29
             </span>
             <span className="text-amber-600 text-lg align-top relative top-1">$</span>
             <span className="text-5xl md:text-6xl font-serif text-foreground">11,99</span>

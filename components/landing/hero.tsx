@@ -31,7 +31,7 @@ export function Hero() {
             </h1>
 
             <p className="text-base md:text-lg lg:text-xl text-stone-600 leading-relaxed max-w-xl mb-8 lg:mx-0 px-2 lg:px-0">
-              Convierte tu cocina en un negocio de lujo con menos de <strong>$25 USD</strong> de inversión inicial y el paso a paso para vender tu primera colección.
+              Aprende paso a paso cómo crear y vender tus propias velas artesanales. Incluye la  <strong>guía definitiva + 6 bonos exclusivos</strong> para que tu emprendimiento brille desde el primer día.
             </p>
 
             {/* BOTÓN CTA */}

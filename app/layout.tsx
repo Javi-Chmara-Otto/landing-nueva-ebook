@@ -78,6 +78,19 @@ export default function RootLayout({
           `}
         </Script>
 
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-28E40SCJKW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-28E40SCJKW');
+  `}
+        </Script>
+
       </body>
     </html>
   )

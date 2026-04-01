@@ -10,21 +10,39 @@ export function UrgencyBanner() {
   });
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.minutes === 0 && prev.seconds === 0) {
-          // Reset to 15 minutes when it reaches 0
-          return { minutes: 14, seconds: 59 };
-        }
+    const STORAGE_KEY = "velas_countdown_end";
+    const DURATION_MINUTES = 15;
 
-        if (prev.seconds === 0) {
-          return { minutes: prev.minutes - 1, seconds: 59 };
-        }
+    let endTime = localStorage.getItem(STORAGE_KEY);
 
-        return { ...prev, seconds: prev.seconds - 1 };
-      });
-    }, 1000);
+    if (!endTime) {
+      const end = new Date();
+      end.setMinutes(end.getMinutes() + DURATION_MINUTES);
+      endTime = end.toISOString();
+      localStorage.setItem(STORAGE_KEY, endTime);
+    }
 
+    const tick = () => {
+      const now = new Date();
+      const end = new Date(endTime!);
+      const diff = end.getTime() - now.getTime();
+
+      if (diff <= 0) {
+        const newEnd = new Date();
+        newEnd.setMinutes(newEnd.getMinutes() + DURATION_MINUTES);
+        endTime = newEnd.toISOString();
+        localStorage.setItem(STORAGE_KEY, endTime);
+        setTimeLeft({ minutes: 14, seconds: 59 });
+        return;
+      }
+
+      const minutes = Math.floor(diff / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      setTimeLeft({ minutes, seconds });
+    };
+
+    tick();
+    const timer = setInterval(tick, 1000);
     return () => clearInterval(timer);
   }, []);
 

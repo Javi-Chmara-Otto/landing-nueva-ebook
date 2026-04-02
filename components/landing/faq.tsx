@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "¿Cuánto dinero necesito para empezar?",
-    answer: "Con $10-15 dólares puedes hacer tus primeras 3-4 velas de prueba. Incluyo una lista de proveedores mayoristas para que consigas los mejores precios."
+    answer: "Con $10-15 dólares puedes hacer tus primeras 3-4 velas de prueba. En la guía te enseño formas de encontrar proveedores para conseguir los mejores precios."
   },
   {
     question: "¿Cómo recibo el ebook después de comprarlo?",

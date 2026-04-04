@@ -55,16 +55,16 @@ export function Hero() {
             {/* BULLETS */}
             <div className="grid grid-cols-2 gap-2 lg:gap-3 text-left max-w-md mx-auto lg:mx-0 mb-8 px-2">
               <div className="flex items-center gap-1.5 text-stone-800 text-[10px] md:text-sm font-bold bg-white/50 p-2 rounded-xl border border-amber-100/50 shadow-sm">
-                <span>✨</span> <span className="leading-tight">🔥 Alta Rentabilidad</span>
+                <span>✨</span> <span className="leading-tight">Alta Rentabilidad</span>
               </div>
               <div className="flex items-center gap-1.5 text-stone-800 text-[10px] md:text-sm font-bold bg-white/50 p-2 rounded-xl border border-amber-100/50 shadow-sm">
-                <span>🚀</span> <span className="leading-tight">📱 Ventas por IG/WA</span>
+                <span>🚀</span> <span className="leading-tight">Ventas por IG/WA</span>
               </div>
               <div className="flex items-center gap-1.5 text-stone-800 text-[10px] md:text-sm font-bold bg-white/50 p-2 rounded-xl border border-amber-100/50 shadow-sm">
-                <span>💎</span> <span className="leading-tight">💎 Insumos Económicos</span>
+                <span>💎</span> <span className="leading-tight">Insumos Económicos</span>
               </div>
               <div className="flex items-center gap-1.5 text-stone-800 text-[10px] md:text-sm font-bold bg-white/50 p-2 rounded-xl border border-amber-100/50 shadow-sm">
-                <span>🎁</span> <span className="leading-tight">🎁 +6 Bonos Gratis</span>
+                <span>🎁</span> <span className="leading-tight">+6 Bonos Gratis</span>
               </div>
             </div>
 

@@ -68,37 +68,36 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Trust badges */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-[9px] md:text-[10px] text-stone-500 font-bold uppercase tracking-widest opacity-80 mb-10 lg:mb-0">
+            {/* Trust badges CORREGIDOS con más aire inferior */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-[9px] md:text-[10px] text-stone-500 font-bold uppercase tracking-widest opacity-80 mb-20 lg:mb-12">
               <span>• Descarga inmediata</span>
               <span>• Acceso de por vida</span>
               <span>• Garantía 7 días</span>
             </div>
-          </div>
 
-          {/* Columna de Imagen */}
-          <div className="order-2 lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative group">
-              <div className="relative w-56 sm:w-72 lg:w-[420px] transition-all duration-700 group-hover:scale-105">
-                <Image
-                  src="/ebook-ipad-3d.webp"
-                  alt="Ebook Velas"
-                  width={500}
-                  height={666}
-                  priority
-                  className="w-full h-auto drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]"
-                />
-              </div>
+            {/* Columna de Imagen */}
+            <div className="order-2 lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative group">
+                <div className="relative w-56 sm:w-72 lg:w-[420px] transition-all duration-700 group-hover:scale-105">
+                  <Image
+                    src="/ebook-ipad-3d.webp"
+                    alt="Ebook Velas"
+                    width={500}
+                    height={666}
+                    priority
+                    className="w-full h-auto drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]"
+                  />
+                </div>
 
-              <div className="absolute -bottom-4 -right-2 bg-white p-2 lg:p-3 rounded-xl shadow-xl border border-amber-100 flex flex-col items-center rotate-12 z-30 translate-y-2">
-                <span className="text-xl">🔥</span>
-                <span className="text-[8px] font-black uppercase text-stone-800 leading-tight">Oferta<br />Limitada</span>
+                <div className="absolute -bottom-4 -right-2 bg-white p-2 lg:p-3 rounded-xl shadow-xl border border-amber-100 flex flex-col items-center rotate-12 z-30 translate-y-2">
+                  <span className="text-xl">🔥</span>
+                  <span className="text-[8px] font-black uppercase text-stone-800 leading-tight">Oferta<br />Limitada</span>
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
     </section>
   );
 }

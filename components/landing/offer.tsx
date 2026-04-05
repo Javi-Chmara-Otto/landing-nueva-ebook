@@ -8,7 +8,7 @@ const benefits = [
   "Bono 2: Calculadora de costos: $27.00 USD",
   "Bono 3: 10 Plantillas para Redes: $15.00 USD",
   "Bono 4: Velas Navideñas y Temporada: $19.00 USD",
-  "Bono 5: Repostería Avanzada en Velas: $27.00 USD",
+  "Bono 5: Técnica Chantilly Avanzada: $27.00 USD",
   "Bono 6: Marketing para tus Redes: $15.00 USD",
   "VALOR TOTAL: $149 USD",
   "Llévatelo todo hoy por solo: $11.99 USD",

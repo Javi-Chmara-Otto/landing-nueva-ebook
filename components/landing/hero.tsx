@@ -23,7 +23,7 @@ export function Hero() {
                Al subir el padding de la sección, este texto ya no se cortará.
             */}
             <span className="inline-block text-[10px] md:text-xs uppercase tracking-[0.3em] text-amber-900/70 font-black mb-4">
-              EL MÉTODO PROBADO PARA EMPRENDER CON LUJO
+              LA GUÍA PRÁCTICA PARA EMPRENDER CON VELAS
             </span>
 
             <h1
@@ -32,7 +32,7 @@ export function Hero() {
             >
               Crea tu propia Marca de<br className="hidden lg:block" />
               <span className="italic text-amber-800 font-normal px-2 lg:px-0"> Velas Premium </span>
-              <span className="block lg:block text-[0.8em]">y genera tus primeros ingresos esta misma semana</span>
+              <span className="block lg:block text-[0.8em]">y genera tus primeros ingresos en pocos días</span>
             </h1>
 
             <p className="text-base md:text-lg lg:text-xl text-stone-600 leading-relaxed max-w-xl mb-8 lg:mx-0 px-2 lg:px-0">

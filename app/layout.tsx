@@ -91,6 +91,40 @@ export default function RootLayout({
   `}
         </Script>
 
+        <Script id="utm-hotmart" strategy="afterInteractive">
+          {`
+    (function() {
+      function getUTMs() {
+        var params = new URLSearchParams(window.location.search);
+        var utms = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+        var result = [];
+        utms.forEach(function(key) {
+          var val = params.get(key);
+          if (val) result.push(key + '=' + encodeURIComponent(val));
+        });
+        return result.join('&');
+      }
+
+      function appendUTMsToHotmart() {
+        var utmString = getUTMs();
+        if (!utmString) return;
+        var links = document.querySelectorAll('a[href*="hotmart.com"]');
+        links.forEach(function(link) {
+          var href = link.getAttribute('href');
+          var separator = href.indexOf('?') !== -1 ? '&' : '?';
+          link.setAttribute('href', href + separator + utmString);
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', appendUTMsToHotmart);
+      } else {
+        appendUTMsToHotmart();
+      }
+    })();
+  `}
+        </Script>
+
       </body>
     </html>
   )

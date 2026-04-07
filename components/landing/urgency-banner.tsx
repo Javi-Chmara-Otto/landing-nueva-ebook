@@ -51,8 +51,6 @@ export function UrgencyBanner() {
   return (
     <a
       href="https://pay.hotmart.com/U104748042Q?checkoutMode=10"
-      target="_blank"
-      rel="noopener noreferrer"
       style={{ backgroundColor: '#2A1810', color: 'white', display: 'block', textDecoration: 'none' }}
       className="fixed top-0 left-0 right-0 z-[100] w-full py-3 md:py-4 border-b border-amber-900/30 shadow-2xl transition-all hover:opacity-90"
     >

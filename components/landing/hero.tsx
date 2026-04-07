@@ -46,7 +46,7 @@ export function Hero() {
                 size="lg"
                 className="h-14 lg:h-20 px-8 lg:px-12 text-lg lg:text-2xl font-black transition-all shadow-[0_15px_40px_rgba(245,158,11,0.3)] !bg-[#f59e0b] !text-white rounded-full hover:scale-105 hover:!bg-[#d97706] border-none active:scale-95"
               >
-                <a href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" target="_blank" className="tracking-tight uppercase">
+                <a href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" className="tracking-tight uppercase">
                   SÍ, QUIERO EMPRENDER HOY →
                 </a>
               </Button>

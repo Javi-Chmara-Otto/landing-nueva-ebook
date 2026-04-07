@@ -95,7 +95,7 @@ export function Offer() {
 
           {/* CTA Button */}
           <a
-            href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" target="_blank"
+            href="https://pay.hotmart.com/U104748042Q?checkoutMode=10"
             className="block w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-center font-semibold py-4 px-6 rounded-xl transition-all duration-300 text-base md:text-lg tracking-wide shadow-md hover:shadow-lg"
           >
             DESCARGAR GUÍA POR $11,99 →

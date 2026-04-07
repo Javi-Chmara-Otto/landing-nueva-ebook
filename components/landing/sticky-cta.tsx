@@ -39,7 +39,7 @@ export function StickyCta() {
           size="lg"
           className="!bg-[#D97706] hover:!bg-[#B45309] !text-white font-bold py-8 px-10 rounded-full text-xl transition-all shadow-xl flex items-center justify-center"
         >
-          <a href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" target="_blank" className="flex items-center gap-3">
+          <a href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" className="flex items-center gap-3">
             <ShoppingBag className="w-6 h-6 !text-white" />
             Comprar Ahora - $11.99
           </a>

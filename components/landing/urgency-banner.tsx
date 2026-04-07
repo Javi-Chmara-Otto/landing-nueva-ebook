@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Gift } from "lucide-react";
 
 export function UrgencyBanner() {
   const [timeLeft, setTimeLeft] = useState({
@@ -52,25 +51,42 @@ export function UrgencyBanner() {
     <a
       href="https://pay.hotmart.com/U104748042Q?checkoutMode=10"
       style={{ backgroundColor: '#2A1810', color: 'white', display: 'block', textDecoration: 'none' }}
-      className="fixed top-0 left-0 right-0 z-[100] w-full py-3 md:py-4 border-b border-amber-900/30 shadow-2xl transition-all hover:opacity-90"
+      className="fixed top-0 left-0 right-0 z-[100] w-full py-2.5 md:py-4 border-b border-amber-900/30 shadow-2xl transition-all hover:opacity-90"
     >
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-center">
+      <div className="container mx-auto px-4 flex items-center justify-center gap-2 md:gap-6 text-center">
 
-        <div className="flex items-center gap-3">
+        {/* TEXTO: Con el "+" agregado y el resaltado amarillo */}
+        <div className="flex items-center gap-2">
           <span style={{ color: '#fbbf24' }} className="text-xl md:text-2xl animate-pulse">🎁</span>
-          <p className="text-base md:text-xl font-semibold tracking-tight m-0">
-            ¡Oferta de lanzamiento! <span style={{ color: '#fbbf24', fontWeight: 'bold' }}>Más del 50% OFF</span> por tiempo limitado:
+          <p className="text-base md:text-xl font-bold tracking-tight m-0">
+            <span className="hidden md:inline">¡Oferta de lanzamiento! </span>
+            <span className="md:hidden">Oferta: </span>
+            <span
+              style={{
+                backgroundColor: '#fbbf24',
+                color: '#2A1810',
+                padding: '1px 6px',
+                borderRadius: '4px',
+                marginLeft: '2px'
+              }}
+            >
+              +50% OFF
+            </span>
+            <span className="hidden md:inline"> por tiempo limitado:</span>
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
-          {/* Contador con fondo oscuro para que resalte */}
-          <div style={{ backgroundColor: 'rgba(0,0,0,0.4)', borderColor: 'rgba(251,191,36,0.3)' }} className="border px-4 py-1 rounded-md text-amber-400 font-mono text-2xl md:text-3xl font-bold shadow-inner">
+        {/* CONTADOR */}
+        <div className="flex items-center gap-2 md:gap-4">
+          <div
+            style={{ backgroundColor: 'rgba(0,0,0,0.4)', borderColor: 'rgba(251,191,36,0.3)' }}
+            className="border px-2 md:px-4 py-0.5 md:py-1 rounded text-amber-400 font-mono text-xl md:text-3xl font-bold shadow-inner"
+          >
             {formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
           </div>
 
-          <p style={{ color: 'rgba(251,191,36,0.8)' }} className="text-sm md:text-base animate-pulse font-medium m-0">
-            → Compra ahora antes de que expire
+          <p style={{ color: 'rgba(251,191,36,0.8)' }} className="hidden md:block text-sm md:text-base animate-pulse font-medium m-0">
+            → Compra ahora
           </p>
         </div>
 

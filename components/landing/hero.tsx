@@ -22,7 +22,7 @@ export function Hero() {
 
             {/* CAMBIO 2: Reduje mb-4 a mb-2 para que el H1 suba más rápido */}
             <span className="inline-block text-[10px] md:text-xs uppercase tracking-[0.3em] text-amber-900/70 font-black mb-2">
-              LA GUÍA PRÁCTICA PARA EMPRENDER CON VELAS
+              EBOOK DIGITAL · GUÍA PASO A PASO PARA PRINCIPIANTES
             </span>
 
             <h1

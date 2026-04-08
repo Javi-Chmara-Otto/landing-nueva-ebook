@@ -21,7 +21,7 @@ export function Hero() {
           <div className="text-center lg:text-left order-1 lg:col-span-7">
 
             {/* CAMBIO 2: Reduje mb-4 a mb-2 para que el H1 suba más rápido */}
-            <span className="inline-block text-[10px] md:text-xs uppercase tracking-[0.3em] text-amber-900/70 font-black mb-2">
+            <span className="inline-block text-[12px] md:text-xs uppercase tracking-[0.3em] text-amber-900/70 font-black mb-2">
               EBOOK DIGITAL · GUÍA PARA CREAR Y VENDER VELAS DESDE CERO
             </span>
 
@@ -47,7 +47,7 @@ export function Hero() {
                 className="h-14 lg:h-20 px-8 lg:px-12 text-lg lg:text-2xl font-black transition-all shadow-[0_15px_40px_rgba(245,158,11,0.3)] !bg-[#f59e0b] !text-white rounded-full hover:scale-105 hover:!bg-[#d97706] border-none active:scale-95"
               >
                 <a href="https://pay.hotmart.com/U104748042Q?checkoutMode=10" className="tracking-tight uppercase">
-                  SÍ, QUIERO EMPRENDER HOY →
+                  QUIERO MI GUÍA AHORA →
                 </a>
               </Button>
             </div>

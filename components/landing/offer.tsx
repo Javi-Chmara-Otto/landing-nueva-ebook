@@ -11,7 +11,7 @@ const benefits = [
   "Bono 5: Técnica Chantilly Avanzada: $27.00 USD",
   "Bono 6: Marketing para tus Redes: $15.00 USD",
   "VALOR TOTAL: $149 USD",
-  "Llévatelo todo hoy por solo: $11.99 USD",
+  "Llévatelo todo hoy por solo: $9.99 USD",
 ];
 
 export function Offer() {
@@ -39,7 +39,7 @@ export function Offer() {
           <div className="flex justify-center mb-6">
             <span className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-xs font-semibold tracking-wider px-5 py-2 rounded-full">
               <Sparkles className="w-3.5 h-3.5" />
-              OFERTA DE LANZAMIENTO
+              OFERTA DE FIN DE SEMANA
               <Sparkles className="w-3.5 h-3.5" />
             </span>
           </div>
@@ -55,7 +55,7 @@ export function Offer() {
               $29
             </span>
             <span className="text-amber-600 text-lg align-top relative top-1">$</span>
-            <span className="text-5xl md:text-6xl font-serif text-foreground">11,99</span>
+            <span className="text-5xl md:text-6xl font-serif text-foreground">9,99</span>
             <span className="text-xl md:text-2xl text-muted-foreground ml-2">USD</span>
           </div>
 
@@ -98,7 +98,7 @@ export function Offer() {
             href="https://pay.hotmart.com/U104748042Q?checkoutMode=10"
             className="block w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-center font-semibold py-4 px-6 rounded-xl transition-all duration-300 text-base md:text-lg tracking-wide shadow-md hover:shadow-lg"
           >
-            DESCARGAR GUÍA POR $11,99 →
+            DESCARGAR GUÍA POR $9,99 →
           </a>
 
           <p className="w-full text-center text-[10px] sm:text-xs md:text-sm font-medium text-amber-900/70 uppercase tracking-widest mt-4 mb-3">

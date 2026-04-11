@@ -40,7 +40,7 @@ export function StickyCta() {
           </p>
           <p className="text-sm text-muted-foreground">
             <span className="line-through mr-2">$29.99 USD</span>
-            <span className="text-foreground font-medium">$11.99 USD</span>
+            <span className="text-foreground font-medium">$9.99 USD</span>
             {" · "}Acceso inmediato
           </p>
         </div>
@@ -51,7 +51,7 @@ export function StickyCta() {
         >
           <a href={checkoutUrl} className="flex items-center gap-3">
             <ShoppingBag className="w-6 h-6 !text-white" />
-            Comprar Ahora - $11.99
+            Comprar Ahora - $9.99
           </a>
         </Button>
       </div>

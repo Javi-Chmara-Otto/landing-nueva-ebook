@@ -60,7 +60,7 @@ export function Bonus() {
                 </h2>
 
                 <p className="text-muted-foreground mb-20 max-w-2xl mx-auto text-lg italic">
-                    Si te inscribes hoy, desbloqueas estas herramientas para lanzar tu negocio con <strong>menos de $25 USD</strong>.
+                    Si te inscribes hoy, desbloqueas estas herramientas para lanzar tu negocio <br /><strong>sin necesidad de grandes inversiones</strong>.
                 </p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">

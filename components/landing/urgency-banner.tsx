@@ -59,7 +59,7 @@ export function UrgencyBanner() {
         <div className="flex items-center gap-2">
           <span style={{ color: '#fbbf24' }} className="text-xl md:text-2xl animate-pulse">🎁</span>
           <p className="text-base md:text-xl font-bold tracking-tight m-0">
-            <span className="hidden md:inline">¡Oferta de lanzamiento! </span>
+            <span className="hidden md:inline">¡Oferta de fin de semana! </span>
             <span className="md:hidden">Oferta: </span>
             <span
               style={{

@@ -39,7 +39,7 @@ export function Offer() {
           <div className="flex justify-center mb-6">
             <span className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-xs font-semibold tracking-wider px-5 py-2 rounded-full">
               <Sparkles className="w-3.5 h-3.5" />
-              OFERTA DEL MES
+              OFERTA
               <Sparkles className="w-3.5 h-3.5" />
             </span>
           </div>

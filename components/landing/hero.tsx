@@ -27,11 +27,15 @@ export function Hero() {
 
             <h1
               style={{ fontSize: 'clamp(32px, 7.5vw, 62px)', lineHeight: '1.1' }}
-              className="font-serif font-medium tracking-tight text-stone-950 mb-4"
+              className="font-serif font-medium tracking-tight text-stone-950 mb-4 max-w-[600px] mx-auto lg:mx-0"
             >
-              Crea tu propia Marca de<br className="hidden lg:block" />
-              <span className="italic text-amber-800 font-normal px-2 lg:px-0"> Velas Premium </span>
-              <span className="block lg:block text-[0.7em]">y genera tus primeros ingresos en pocos días</span>
+              <span className="sm:whitespace-nowrap">Aprende a crear tus propias</span><br />
+              <span className="italic text-amber-800 font-normal">
+                Velas Artesanales
+              </span>
+              <span className="block text-[0.7em]">
+                y genera tus primeros ingresos en pocos días
+              </span>
             </h1>
 
             {/* CAMBIO 3: Reduje mb-8 a mb-6 en el párrafo */}

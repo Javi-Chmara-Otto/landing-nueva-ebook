@@ -83,7 +83,7 @@ export function Hero() {
           {/* Columna de Imagen */}
           <div className="order-2 lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative group">
-              <div className="relative w-48 sm:w-72 lg:w-[420px] transition-all duration-700 group-hover:scale-105">
+              <div className="relative w-72 sm:w-96 lg:w-[560px] transition-all duration-700 group-hover:scale-105">
                 <Image
                   src="/Mockup_para_landing_2.webp"
                   alt="Ebook Velas"

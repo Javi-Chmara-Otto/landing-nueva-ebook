@@ -85,7 +85,7 @@ export function Hero() {
             <div className="relative group">
               <div className="relative w-72 sm:w-96 lg:w-[560px] transition-all duration-700 group-hover:scale-105">
                 <Image
-                  src="/mockup_2.png"
+                  src="/mockup_3.png"
                   alt="Ebook Velas"
                   width={500}
                   height={666}

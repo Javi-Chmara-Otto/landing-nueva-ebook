@@ -90,7 +90,7 @@ export function Hero() {
                   width={500}
                   height={666}
                   priority
-                  quality={90}
+                  quality={95}
                   className="w-full h-auto drop-shadow-[0_20px_20px_rgba(0,0,0,0.2)]"
                 />
               </div>
